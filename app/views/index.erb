@@ -1,0 +1,12 @@
+<div class="container">
+
+  <p class="welcome">Welcome to Sinatra Authentication Challenge.</p>
+
+  <%if @users %>
+    <% @users.each do |name| %> 
+      <p class="user"> <%=name%></p> 
+    <%end%>
+  <%else%>
+    <p> Please sign in to continue.</p>
+  <%end%> 
+</div>
