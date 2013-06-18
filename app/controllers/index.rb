@@ -23,8 +23,14 @@ post '/sessions' do
     end
 end
 
+get '/sessions/:id' do
+  session.clear
+  redirect '/'
+end
+
 delete '/sessions/:id' do
   session.clear
+  redirect '/'
 end
 
 #----------- USERS -----------
