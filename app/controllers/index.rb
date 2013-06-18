@@ -28,11 +28,6 @@ get '/sessions/:id' do
   redirect '/'
 end
 
-delete '/sessions/:id' do
-  session.clear
-  redirect '/'
-end
-
 #----------- USERS -----------
 
 get '/users/new' do
